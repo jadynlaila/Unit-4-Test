@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta name=”author” content='Jadyn Calhoun'>
+<meta name='description' content='Enjoy this simple game of tic-tac-toe with a friend!'>
+<meta property='og: image' content=''>
+<meta property='og: title' content='Tic-Tac-Toe'>
+<meta property='og: description' content='Enjoy this simple game of tic-tac-toe with a friend!'>
+<title>Tic-Tac-Toe</title>
+<link rel='stylesheet' href='style.css'>
+<!-- <link rel='shortcut icon' href='Untitled.png', 'type='image/x-icon'> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+    <main>
+        <div class="players">
+            <h4 id="play1">Player 1 - 0</h4>
+            <h4 class="break" id="turn">Turn - 1</h4>
+            <h4 id="play2">Player 2 - 0</h4>
+        </div>
+        <div class="winCounter">
+            <h4 id="play1Wins">Wins - 0</h4>
+            <h4 class="break" id="whosTurn">""</h4>
+            <h4 id="play2Wins">Wins - 0</h4>
+        </div>
+        <div class="boxes">
+                <div class="cell cell11" id="cell11" onclick="selectCell('11')"></div>
+                <div class="cell cell12" id="cell12" onclick="selectCell('12')"></div>
+                <div class="cell cell13" id="cell13" onclick="selectCell('13')"></div>
+                <div class="cell cell21" id="cell21" onclick="selectCell('21')"></div>
+                <div class="cell cell22" id="cell22" onclick="selectCell('22')"></div>
+                <div class="cell cell23" id="cell23" onclick="selectCell('23')"></div>
+                <div class="cell cell31" id="cell31" onclick="selectCell('31')"></div>
+                <div class="cell cell32" id="cell32" onclick="selectCell('32')"></div>
+                <div class="cell cell33" id="cell33" onclick="selectCell('33')"></div>
+        </div>
+
+        <div class="restart">
+            <div onclick="resetGame()" class="restartButton">Restart Game?</div>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
